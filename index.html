@@ -16,16 +16,12 @@
     header{
       background:linear-gradient(135deg,#0f766e,#134e4a);
       color:#fff;
-      padding:90px 20px;
+      padding:100px 20px;
       text-align:center;
     }
-    header img{
-      width:140px;
-      margin-bottom:20px;
-    }
     header h1{
-      font-size:2.6rem;
-      margin-bottom:12px;
+      font-size:2.8rem;
+      margin-bottom:14px;
     }
     header p{
       max-width:850px;
@@ -48,6 +44,9 @@
       text-decoration:none;
       font-weight:600;
     }
+    nav a:hover{
+      text-decoration:underline;
+    }
     section{
       max-width:1100px;
       margin:auto;
@@ -69,20 +68,19 @@
       display:grid;
       grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
       gap:28px;
-      justify-items:center;
     }
     .card{
       background:#fff;
       border-radius:18px;
       padding:28px;
       box-shadow:0 12px 30px rgba(0,0,0,.08);
-      width:100%;
     }
     footer{
       background:#134e4a;
       color:#e5e7eb;
       text-align:center;
       padding:50px 20px;
+      font-size:.95rem;
     }
   </style>
 </head>
@@ -90,13 +88,6 @@
 <body>
 
 <header>
-  <!-- LOGO EMBED (PASTI MUNCUL) -->
-  <img 
-    src="data:image/jpeg;base64,
-    /9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxAQEBIQEBAPDw8PDw8PDw8PDw8PDw8PFREWFhURFRUYHSggGBolGxUVITEhJSkrLi4uFx8zODMsNygtLisBCgoKDg0OGxAQGy0lHyUtLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLf/AABEIAQ0BHQMBIgACEQEDEQH/xAAbAAEAAgMBAQAAAAAAAAAAAAAABQYBAwQCB//EADoQAAEDAgMFBQYEBwAAAAAAAAEAAgMEEQUSITFBUWEGEyJxgZGhMkJSsdHwQnLh8DNDU4Kisv/EABoBAQEBAQEBAQAAAAAAAAAAAAABAgMEBQb/xAAtEQEBAAIBAgUDBQEAAAAAAAAAAQIRAyESMUEEIlETMmFxgZGx8BRS4f/aAAwDAQACEQMRAD8A+4ooor5U8oKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooA//Z"
-    alt="Logo FORMASI"
-  />
-
   <h1>Forum Pemuda Enam Berdedikasi</h1>
   <p>
     Forum Pemuda Enam Berdedikasi (FORMASI) merupakan organisasi kepemudaan yang
@@ -118,56 +109,94 @@
 <section id="tentang">
   <h2>Tentang Organisasi</h2>
   <p class="subtitle">
-    Profil singkat Forum Pemuda Enam Berdedikasi
+    Gambaran umum Forum Pemuda Enam Berdedikasi
   </p>
   <div class="card">
-    FORMASI merupakan wadah pembinaan dan pengembangan potensi pemuda yang
-    terstruktur, sistematis, dan berkelanjutan untuk menciptakan generasi muda
-    yang berkarakter, berdaya, dan peduli sosial.
+    FORMASI adalah organisasi kepemudaan yang berperan sebagai wadah aspirasi,
+    pembinaan karakter, dan penguatan kepemimpinan pemuda secara terstruktur dan
+    berkelanjutan.
   </div>
 </section>
 
 <section id="nilai">
   <h2>Nilai Dasar</h2>
   <p class="subtitle">
-    Nilai-nilai fundamental sebagai landasan sikap dan budaya organisasi.
+    Nilai-nilai yang menjadi pedoman dalam bersikap dan berorganisasi.
   </p>
   <div class="grid">
-    <div class="card"><strong>Integritas</strong><br>Kejujuran dan tanggung jawab.</div>
-    <div class="card"><strong>Religius & Toleran</strong><br>Berlandaskan nilai keagamaan.</div>
-    <div class="card"><strong>Kepedulian Sosial</strong><br>Peka terhadap masyarakat.</div>
-    <div class="card"><strong>Kolaboratif</strong><br>Gotong royong dan kebersamaan.</div>
+    <div class="card">
+      <strong>Integritas</strong><br>
+      Menjunjung tinggi kejujuran, tanggung jawab, dan konsistensi.
+    </div>
+    <div class="card">
+      <strong>Religius & Toleran</strong><br>
+      Berlandaskan nilai keagamaan dan menghargai perbedaan.
+    </div>
+    <div class="card">
+      <strong>Kepedulian Sosial</strong><br>
+      Peka terhadap kondisi sosial dan lingkungan masyarakat.
+    </div>
+    <div class="card">
+      <strong>Kolaboratif</strong><br>
+      Mengedepankan kebersamaan dan gotong royong.
+    </div>
   </div>
 </section>
 
 <section id="bph">
   <h2>Badan Pengurus Harian</h2>
-  <p class="subtitle"><strong>Masa Bakti 2025 – 2028</strong></p>
+  <p class="subtitle">
+    Masa Bakti 2025 – 2028
+  </p>
   <div class="grid">
-    <div class="card">👑 Ketua<br><strong>Ragis Esa Putra</strong></div>
-    <div class="card">🤝 Wakil Ketua<br><strong>Moch Rafli Nuryasin</strong></div>
-    <div class="card">📝 Sekretaris I<br><strong>Lulu Atul Nafisah</strong></div>
-    <div class="card">📄 Sekretaris II<br><strong>Nurul Ilma'nun</strong></div>
-    <div class="card">💰 Bendahara I<br><strong>Muhamad Rifki</strong></div>
-    <div class="card">💳 Bendahara II<br><strong>Gina Safitri Hidayat</strong></div>
+    <div class="card">Ketua<br><strong>Ragis Esa Putra</strong></div>
+    <div class="card">Wakil Ketua<br><strong>Moch Rafli Nuryasin</strong></div>
+    <div class="card">Sekretaris I<br><strong>Lulu Atul Nafisah</strong></div>
+    <div class="card">Sekretaris II<br><strong>Nurul Ilma'nun</strong></div>
+    <div class="card">Bendahara I<br><strong>Muhamad Rifki</strong></div>
+    <div class="card">Bendahara II<br><strong>Gina Safitri Hidayat</strong></div>
+  </div>
+</section>
+
+<section id="divisi">
+  <h2>Divisi</h2>
+  <p class="subtitle">
+    Unit kerja yang mendukung jalannya organisasi.
+  </p>
+  <div class="grid">
+    <div class="card">Divisi Pendidikan & Keorganisasian</div>
+    <div class="card">Divisi Sosial & Kemasyarakatan</div>
+    <div class="card">Divisi Kreatif & Media</div>
+    <div class="card">Divisi Humas & Kemitraan</div>
+  </div>
+</section>
+
+<section id="program">
+  <h2>Program Kerja</h2>
+  <p class="subtitle">
+    Program strategis sebagai wujud pengabdian pemuda.
+  </p>
+  <div class="grid">
+    <div class="card">Leadership Camp</div>
+    <div class="card">Penguatan Kapasitas Pemuda</div>
+    <div class="card">Kegiatan Sosial & Keagamaan</div>
+    <div class="card">Pengembangan Kreativitas Pemuda</div>
   </div>
 </section>
 
 <section id="kontak">
   <h2>Kontak</h2>
   <p class="subtitle">
-    Mari terhubung dan berkolaborasi
+    Informasi dan komunikasi organisasi
   </p>
-  <div class="grid">
-    <div class="card">
-      Email: formasi.offc@gmail.com<br>
-      Instagram: @formasi.ofc_
-    </div>
+  <div class="card" style="text-align:center;">
+    Email: formasi.offc@gmail.com<br>
+    Instagram: @formasi.ofc_
   </div>
 </section>
 
 <footer>
-  &copy; 2026 Forum Pemuda Enam Berdedikasi<br>
+  &copy; 2026 Forum Pemuda Enam Berdedikasi (FORMASI)<br>
   Bersatu • Bergerak • Berdedikasi
 </footer>
 
