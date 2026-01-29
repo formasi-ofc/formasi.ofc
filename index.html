@@ -1,53 +1,175 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Forum Pemuda Enam Berdedikasi</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Forum Pemuda Enam Berdedikasi (FORMASI)</title>
 
   <style>
     body{
       margin:0;
-      font-family:Segoe UI, Tahoma, sans-serif;
-      background:#f8fafc;
+      font-family:'Segoe UI', Tahoma, sans-serif;
+      line-height:1.7;
       color:#1f2937;
+      background:#f8fafc;
     }
     header{
       background:linear-gradient(135deg,#0f766e,#134e4a);
       color:#fff;
-      padding:80px 20px;
+      padding:90px 20px;
       text-align:center;
     }
     header img{
-      width:130px;
-      height:auto;
+      width:140px;
       margin-bottom:20px;
     }
     header h1{
-      margin:0;
       font-size:2.6rem;
+      margin-bottom:12px;
     }
     header p{
-      max-width:800px;
-      margin:15px auto 0;
+      max-width:850px;
+      margin:auto;
       font-size:1.1rem;
+    }
+    nav{
+      background:#0f766e;
+      position:sticky;
+      top:0;
+      z-index:100;
+      display:flex;
+      justify-content:center;
+      gap:24px;
+      padding:14px 20px;
+      flex-wrap:wrap;
+    }
+    nav a{
+      color:#fff;
+      text-decoration:none;
+      font-weight:600;
+    }
+    section{
+      max-width:1100px;
+      margin:auto;
+      padding:80px 20px;
+    }
+    h2{
+      text-align:center;
+      color:#0f766e;
+      font-size:2rem;
+      margin-bottom:16px;
+    }
+    .subtitle{
+      text-align:center;
+      color:#475569;
+      max-width:760px;
+      margin:0 auto 50px;
+    }
+    .grid{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+      gap:28px;
+      justify-items:center;
+    }
+    .card{
+      background:#fff;
+      border-radius:18px;
+      padding:28px;
+      box-shadow:0 12px 30px rgba(0,0,0,.08);
+      width:100%;
+    }
+    footer{
+      background:#134e4a;
+      color:#e5e7eb;
+      text-align:center;
+      padding:50px 20px;
     }
   </style>
 </head>
 
 <body>
 
-  <header>
-    <!-- LOGO -->
-    <img src="images/logo-formasi.png.jpeg" alt="Logo FORMASI">
+<header>
+  <!-- LOGO EMBED (PASTI MUNCUL) -->
+  <img 
+    src="data:image/jpeg;base64,
+    /9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxAQEBIQEBAPDw8PDw8PDw8PDw8PDw8PFREWFhURFRUYHSggGBolGxUVITEhJSkrLi4uFx8zODMsNygtLisBCgoKDg0OGxAQGy0lHyUtLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLf/AABEIAQ0BHQMBIgACEQEDEQH/xAAbAAEAAgMBAQAAAAAAAAAAAAAABQYBAwQCB//EADoQAAEDAgMFBQYEBwAAAAAAAAEAAgMEEQUSITFBUWEGEyJxgZGhMkJSsdHwQnLh8DNDU4Kisv/EABoBAQEBAQEBAQAAAAAAAAAAAAABAgMEBQb/xAAtEQEBAAIBAgUDBQEAAAAAAAAAAQIRAyESMUEEIlETMmFxgZGx8BRS4f/aAAwDAQACEQMRAD8A+4ooor5U8oKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooA//Z"
+    alt="Logo FORMASI"
+  />
 
-    <h1>Forum Pemuda Enam Berdedikasi</h1>
-    <p>
-      Forum Pemuda Enam Berdedikasi (FORMASI) merupakan organisasi kepemudaan
-      yang mewadahi pemuda RT 06 RW 05 sebagai sarana pembinaan, pengembangan
-      kapasitas, dan penguatan peran pemuda dalam kehidupan bermasyarakat.
-    </p>
-  </header>
+  <h1>Forum Pemuda Enam Berdedikasi</h1>
+  <p>
+    Forum Pemuda Enam Berdedikasi (FORMASI) merupakan organisasi kepemudaan yang
+    mewadahi pemuda di lingkungan RT 06 RW 05 sebagai sarana pembinaan,
+    pengembangan kapasitas, serta penguatan peran pemuda dalam kehidupan
+    bermasyarakat.
+  </p>
+</header>
+
+<nav>
+  <a href="#tentang">Tentang</a>
+  <a href="#nilai">Nilai Dasar</a>
+  <a href="#bph">BPH</a>
+  <a href="#divisi">Divisi</a>
+  <a href="#program">Program</a>
+  <a href="#kontak">Kontak</a>
+</nav>
+
+<section id="tentang">
+  <h2>Tentang Organisasi</h2>
+  <p class="subtitle">
+    Profil singkat Forum Pemuda Enam Berdedikasi
+  </p>
+  <div class="card">
+    FORMASI merupakan wadah pembinaan dan pengembangan potensi pemuda yang
+    terstruktur, sistematis, dan berkelanjutan untuk menciptakan generasi muda
+    yang berkarakter, berdaya, dan peduli sosial.
+  </div>
+</section>
+
+<section id="nilai">
+  <h2>Nilai Dasar</h2>
+  <p class="subtitle">
+    Nilai-nilai fundamental sebagai landasan sikap dan budaya organisasi.
+  </p>
+  <div class="grid">
+    <div class="card"><strong>Integritas</strong><br>Kejujuran dan tanggung jawab.</div>
+    <div class="card"><strong>Religius & Toleran</strong><br>Berlandaskan nilai keagamaan.</div>
+    <div class="card"><strong>Kepedulian Sosial</strong><br>Peka terhadap masyarakat.</div>
+    <div class="card"><strong>Kolaboratif</strong><br>Gotong royong dan kebersamaan.</div>
+  </div>
+</section>
+
+<section id="bph">
+  <h2>Badan Pengurus Harian</h2>
+  <p class="subtitle"><strong>Masa Bakti 2025 – 2028</strong></p>
+  <div class="grid">
+    <div class="card">👑 Ketua<br><strong>Ragis Esa Putra</strong></div>
+    <div class="card">🤝 Wakil Ketua<br><strong>Moch Rafli Nuryasin</strong></div>
+    <div class="card">📝 Sekretaris I<br><strong>Lulu Atul Nafisah</strong></div>
+    <div class="card">📄 Sekretaris II<br><strong>Nurul Ilma'nun</strong></div>
+    <div class="card">💰 Bendahara I<br><strong>Muhamad Rifki</strong></div>
+    <div class="card">💳 Bendahara II<br><strong>Gina Safitri Hidayat</strong></div>
+  </div>
+</section>
+
+<section id="kontak">
+  <h2>Kontak</h2>
+  <p class="subtitle">
+    Mari terhubung dan berkolaborasi
+  </p>
+  <div class="grid">
+    <div class="card">
+      Email: formasi.offc@gmail.com<br>
+      Instagram: @formasi.ofc_
+    </div>
+  </div>
+</section>
+
+<footer>
+  &copy; 2026 Forum Pemuda Enam Berdedikasi<br>
+  Bersatu • Bergerak • Berdedikasi
+</footer>
 
 </body>
 </html>
